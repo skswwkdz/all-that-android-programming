@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_gpsmap"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    > 
+    <com.google.android.maps.MapView
+    	android:id="@+id/mapview_gpsmap"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:clickable="true"
+    	android:apiKey="0RaurJmzx4mpfYjWJZkHf5TUKcUMTAA4_jg0m2w"/> 
+    	<!-- android:apiKey="0RaurJmzx4mqfXhSUMmHLp8y7NW3m4PlVPLjL4g" -->
+    <Button 
+    	android:text="나의위치이동" 
+    	android:id="@+id/btn_myLocation" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="50dip"
+    	android:layout_gravity="left"
+    	android:onClick="btnOnclick"
+    ></Button>
+     <Button 
+    	android:background="@drawable/btn_trustzone" 
+    	android:id="@+id/btn_SOS" 
+    	android:layout_width="80dip" 
+    	android:layout_height="50dip"
+    	android:layout_gravity="center|top"
+    	android:onClick="btnOnclick"
+    ></Button>
+   <Button 
+    	android:id="@+id/btn_otherLocation" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="50dip"
+    	android:layout_gravity="right"
+    	android:onClick="btnOnclick"
+    ></Button>
+</FrameLayout>

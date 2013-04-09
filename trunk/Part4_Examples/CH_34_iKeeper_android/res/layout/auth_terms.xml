@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip"
+    >
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	
+    >
+    	<TextView  
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="서비스 이용약관"
+		    />
+    </LinearLayout>
+    <LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	
+    >
+    	<TableLayout
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_margin="1dip"
+	    	android:background="@drawable/com_rounded_corner"
+    	>
+    		<ScrollView
+    			android:layout_width="fill_parent" 
+			    android:layout_height="300dip" 
+			    android:layout_margin="5dip"
+			    >
+		    	<TextView  
+				    android:layout_width="fill_parent" 
+				    android:layout_height="300dip" 
+				    android:text="@string/hello"
+				    android:id="@+id/terms_textview"
+				    android:layout_margin="10dip"
+				    android:textColor="#708090"
+			    />
+		    </ScrollView>
+		    <CheckBox
+		    	android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="동의합니다."
+			    android:textColor="#708090"
+			    android:id="@+id/terms_checkbox"
+			    ></CheckBox>
+    	</TableLayout>
+    
+    </LinearLayout>
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    >
+    	<Button  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:layout_weight="1"
+		    android:id="@+id/terms_confirm"
+		    android:onClick="terms_onclick"
+		    android:text="확인"/>
+    	<Button  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:layout_weight="1"
+		    android:id="@+id/terms_cancel"
+		    android:onClick="terms_onclick"
+		    android:text="취소"/>		    
+    </LinearLayout>
+</LinearLayout>
