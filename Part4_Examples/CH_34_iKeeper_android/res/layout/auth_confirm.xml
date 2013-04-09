@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/auth_toptext"
+	    />
+	<LinearLayout 
+		android:layout_width="match_parent" 
+		android:id="@+id/auth_linearLayout1" 
+		android:layout_height="wrap_content">
+	    <EditText 
+	    	android:hint="Tellno" 
+	    	android:id="@+id/auth_editText" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="3"
+	    	android:digits="1234567890"
+    	android:inputType="number|phone">
+	    </EditText>
+	    <Button 
+	    	android:text="인증확인" 
+	    	android:id="@+id/btn_auth_confirm" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1">
+	    </Button>
+	</LinearLayout>
+	<Button 
+	   	android:text="인증번호 재전송" 
+	   	android:id="@+id/btn_auth_resend" 
+	   	android:layout_height="wrap_content"
+	   	android:layout_width="fill_parent" android:layout_gravity="center_vertical">
+	</Button>
+	<TextView  
+		android:id="@+id/auth_changeTelno" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/auth_bottomtext" android:layout_gravity="center_vertical"/>
+</LinearLayout>
